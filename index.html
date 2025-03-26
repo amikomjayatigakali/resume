@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Aulia Resty Nur Aini</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Times New Roman", serif;
+    }
+    body {
+      background: linear-gradient(to right, #f9f9f9, #e9ecef);
+      padding: 40px;
+    }
+    .container {
+      position: relative;
+      display: flex;
+      background: #fff;
+      padding: 40px;
+      width: 80%;
+      margin: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      overflow: visible; /* agar teks "ABOUT." tidak terpotong */
+      align-items: flex-start;
+    }
+    /* Tulisan ABOUT. di pojok kiri, diperkecil agar tidak terpotong */
+    .about-text {
+      position: absolute;
+      left: 10px; /* atur posisi horizontal */
+      top: 50%;
+      transform: translateY(-50%) rotate(180deg);
+      font-size: 80px; /* perkecil agar muat */
+      color: #aaa;
+      font-weight: bold;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+    }
+    .left {
+      flex: 2;
+      padding-left: 100px; /* tambahkan padding agar teks tidak ketumpuk ABOUT. */
+      padding-right: 40px;
+      border-right: 1px solid #eaeaea;
+    }
+    .left h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .job-title, .bold-text {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #666;
+    }
+    .bold-text {
+      font-weight: bold;
+      color: #444;
+    }
+    .left p {
+      margin: 10px 0;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #555;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #007bff;
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      border: none;
+      border-radius: 20px; /* tombol lebih melengkung */
+      transition: background 0.3s;
+      text-transform: none; /* Tetap tampil seperti "My Portofolio" */
+    }
+    .btn:hover {
+      background: #0056b3;
+    }
+    .right {
+      flex: 1;
+      padding-left: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border: 2px solid #aaa; /* Border foto warna abu-abu */
+      margin-bottom: 20px;
+    }
+    .info-box {
+      width: 100%;
+      background: #f0f0f0;
+      padding: 20px;
+      border-radius: 8px;
+      color: #333;
+      font-size: 16px;
+      line-height: 1.5;
+      text-align: left;
+    }
+    .info-box p {
+      margin: 8px 0;
+    }
+    .info-box strong {
+      color: #555;
+    }
+    .email {
+      font-style: italic;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="about-text">ABOUT.</div>
+    <div class="left">
+      <h1>Aulia Resty Nur Aini</h1>
+      <span class="job-title">Mahasiswa | Web Developer</span>
+      <span class="bold-text">A Talented Freelancer</span>
+      <p>Located In Indonesia</p>
+      <p>
+        Saya seorang mahasiswa yang memiliki ketertarikan dalam pengembangan web dan desain UI/UX. 
+        Saya telah mempelajari berbagai bahasa pemrograman seperti HTML, CSS, dan JavaScript untuk 
+        membangun website yang responsif dan interaktif. Selain itu, saya juga memiliki pengalaman 
+        dalam mengerjakan proyek berbasis web dan berkolaborasi dengan tim untuk menghasilkan desain 
+        yang menarik serta fungsional. Saya selalu tertarik untuk belajar hal baru dan mengembangkan 
+        keterampilan saya lebih lanjut di dunia teknologi.
+      </p>
+      <a href="#" class="btn">My Portofolio</a>
+    </div>
+    <div class="right">
+      <img src="resti.jpg" alt="Foto Profil" class="profile-pic">
+      <div class="info-box">
+        <p><strong>Birthdate:</strong> 10 Januari 2003</p>
+        <p><strong>Phone:</strong> 08123456789</p>
+        <p><strong>Email:</strong> <span class="email">auliaresty@email.com</span></p>
+        <p><strong>Website:</strong> www.auliaresty.com</p>
+        <p><strong>Address:</strong> Yogyakarta, Indonesia</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
